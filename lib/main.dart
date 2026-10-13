@@ -48,6 +48,15 @@ class _MyHomePageState extends State<MyHomePage> {
       ListView(
         padding: const EdgeInsets.all(24),
         children: [
+          ElevatedButton(onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const PassDataScreen()),);}, child: const Text('Elevated')),
+          FilledButton(onPressed:  () {}, child: const Text('Filled')),
+          FilledButton.tonal(
+            onPressed:  () {},
+            child: const Text('Filled Tonal'),
+          ),
+          OutlinedButton(onPressed:  () {}, child: const Text('Outlined')),
+          TextButton(onPressed:  () {}, child: const Text('Text')),
+                    Padding(padding: const EdgeInsets.all(8)),
           ListTile(
             title: Text('Constructor i paràmetres', style: Theme.of(context).textTheme.headlineSmall,),
             shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).colorScheme.primary, width: 1), borderRadius: BorderRadius.circular(8),),
