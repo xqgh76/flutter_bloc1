@@ -30,7 +30,7 @@ class _StatefulStatelessScreenState extends State<StatefulStatelessScreen> {
         child: Column(
           mainAxisAlignment: .center,
           children: [
-            const Text('You have pushed the button this many times:'),
+            const Text('Quants cops has premut el botó:'),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,

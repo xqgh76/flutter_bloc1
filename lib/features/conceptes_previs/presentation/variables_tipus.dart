@@ -6,7 +6,7 @@ class VariablesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context).textTheme;
-    final String name = 'Pikachu';
+    final String name = 'Bola de drac';
     final int level = 25;
     final double weight = 6.0;
     final bool isFavorite = true;
