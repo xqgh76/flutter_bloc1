@@ -8,7 +8,7 @@ class ConstructorParametres extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      name ?? 'No name',
+      name ?? 'Sense valor passat al constructor',
       style: Theme.of(context).textTheme.titleLarge,
     );
   }

@@ -22,7 +22,7 @@ class _Continguts1ScreenState extends State<Continguts1Screen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text('Conceptes previs'),
+        title: Text('Conceptes de llenguatge Dart i Flutter'),
       ),
       body:
       ListView(
