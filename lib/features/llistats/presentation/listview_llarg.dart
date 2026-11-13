@@ -1,7 +1,20 @@
 import 'package:flutter/material.dart';
 
 class ListViewBuilderExempleScreen extends StatelessWidget {
-  const ListViewBuilderExempleScreen({super.key});
+  const ListViewBuilderExempleScreen({super.key, this.veureAppBar = true});
+
+  final bool veureAppBar; // Variable per controlar si es mostra l'AppBar
+
+  PreferredSizeWidget? _mostrarAppBar(BuildContext context) {
+    if (veureAppBar) {
+      return AppBar(
+        title: const Text('Exemple ListView.builder'),
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+      );
+    } else {
+      return null;
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -12,10 +25,7 @@ class ListViewBuilderExempleScreen extends StatelessWidget {
     );
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Exemple ListView.builder'),
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-      ),
+      appBar: _mostrarAppBar(context),
       body: ListView.builder(
         itemCount: opcions.length, // Especifica el nombre total d'elements
         itemBuilder: (BuildContext context, int index) {

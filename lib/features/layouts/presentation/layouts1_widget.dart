@@ -9,11 +9,13 @@ class LayoutExempleScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Exemple de Layouts'),
       ),
-      body: Align(
+      body: 
+      /*Align(
         alignment: Alignment.topCenter, 
         child: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: Card(
+          child: 
+          */Card(
             elevation: 4, 
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
@@ -59,8 +61,8 @@ class LayoutExempleScreen extends StatelessWidget {
               ),
             ),
           ),
-        ),
-      ),
+        /*),
+      ),*/
     );
   }
 }
