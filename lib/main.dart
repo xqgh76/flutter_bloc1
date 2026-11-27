@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'features/conceptes_previs/presentation/continguts1.dart';
 import 'features/llistats/presentation/continguts2.dart';
 import 'features/layouts/presentation/continguts3.dart';
+import 'features/navegacio/presentation/continguts_navegacio.dart';
+import 'features/formularis/presentation/continguts4.dart';
 
 
 void main() {
@@ -66,6 +68,17 @@ class _MyHomePageState extends State<MyHomePage> {
             onTap: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const Continguts3Screen()),);},
           ),
           Padding(padding: const EdgeInsets.all(8)),
+          ListTile(
+            title: Text('Menús Navegació', style: Theme.of(context).textTheme.headlineSmall,),
+            shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).colorScheme.primary, width: 1), borderRadius: BorderRadius.circular(8),),
+            onTap: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const ContingutsNavegacioScreen()),);},
+          ),
+          Padding(padding: const EdgeInsets.all(8)),
+          ListTile(
+            title: Text('Formularis', style: Theme.of(context).textTheme.headlineSmall,),
+            shape: RoundedRectangleBorder(side: BorderSide(color: Theme.of(context).colorScheme.primary, width: 1), borderRadius: BorderRadius.circular(8),),
+            onTap: () {Navigator.push(context, MaterialPageRoute(builder: (context) => const Continguts4Screen()),);},
+          ),
 
         ],
       ),

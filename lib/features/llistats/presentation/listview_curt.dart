@@ -11,8 +11,10 @@ class ListViewExempleScreen extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: ListView(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(1.0),
         children: const [
+          Text("hola", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),),
+          Divider(),
           ListTile(
             leading: Icon(Icons.star),
             title: Text('Element 1'),
